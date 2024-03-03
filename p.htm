@@ -70,7 +70,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+        const loginform = document.getElementById('login').addEventListener('click',
+        function(){
+            const loginArea = document.getElementById('login-area');
+            loginArea.style.display = 'none';
+            const depositArea = document.getElementById('transactionArea');
+            depositArea.style.display = 'block';
+        })
+        const dpbtn = document.getElementById('addDeposit');
+            dpbtn.addEventListener('click', function(){
+            const dpAmount = document.getElementById('dpAmount').value;
+            const addDeposit = parseFloat(dpAmount);
+
+            const currentDeposit = document.getElementById('currentDeposit').innerText;
+            const currentDepositAmount = parseFloat(currentDeposit);
+            const totalAmount = addDeposit + currentDepositAmount;
+
+            document.getElementById('currentDeposit').innerText = totalAmount;
+                document.getElementById('dpAmount').value = '';
+        })
+
+    </script>
 </body>
 </body>
 
