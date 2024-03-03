@@ -1,0 +1,68 @@
+body {
+    padding: 100px;
+}
+
+#login-form {
+    margin: 50px 222px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 13px 1px black;
+}
+
+#transactionArea {
+    display: none;
+    position: relative;
+    margin: 0 100px;
+}
+
+#transaction {
+    margin-left: 32px;
+}
+
+#Deposit {
+    height: 140px;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 262px;
+    margin-right: 48px;
+}
+
+#Withdraw {
+    height: 140px;
+    background-color: rgb(213, 216, 12);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 262px;
+    margin-right: 48px;
+}
+
+#Blance {
+    height: 140px;
+    background-color: rgb(161, 6, 45);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 262px;
+    margin-right: 48px;
+}
+
+#dp {
+    background-color: aqua;
+    height: 169px;
+    margin: 30px 20px 0 0;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#wh {
+    background-color: rgb(241, 187, 9);
+    height: 169px;
+    margin: 30px 20px 0 0;
+    padding: 20px;
+    border-radius: 7px;
+}
