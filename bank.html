@@ -16,8 +16,8 @@
         <h1 class="text-center">Welcome to <span class="text-danger">apna BANK</span></h1>
         <div id="login-form">
             <h4>Login Your account</h4>
-            <input type="text" class="form-control" placeholder="Enter your name"><br>
-            <input type="password" name="" id="" class="form-control" placeholder="Enter Your Password"><br>
+            <input type="text" class="form-control" placeholder="Enter your name" required><br>
+            <input type="password" name="" id="" class="form-control" placeholder="Enter Your Password" required><br>
             <button id="login" class="btn btn-success">Login Now</button>
         </div>
     </div>
@@ -30,11 +30,11 @@
             </div>
             <div class="col-md-4" id="Withdraw">
                 <h3>Withdraw</h3>
-                <h1>$00</h1>
+                <h1>$ <span id="currentWit">00</span></h1>
             </div>
             <div class="col-md-4" id="Blance">
                 <h3>Blance</h3>
-                <h1>$00</h1>
+                <h1>$ <span id="currentBalance">1240</span></h1>
             </div>
         </div>
         <!-- This is for deposit and Withdraw system area -->
@@ -50,7 +50,7 @@
             <div class="col-md-6">
                 <div id="wh">
                     <h4>Withdraw</h4>
-                    <input type="text" name="" id="" class="form-control" placeholder="Type Withdraw Amount"><br>
+                    <input type="text" name="" id="amountWithdraw" class="form-control" placeholder="Type Withdraw Amount"><br>
                     <!-- this is for withdraw system -->
                     <button id="addWithdraw" class="btn btn-success">Withdraw</button>
                 </div>
