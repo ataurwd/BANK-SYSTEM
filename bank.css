@@ -23,7 +23,8 @@ body {
 
 #Deposit {
     height: 140px;
-    background-color: blueviolet;
+    background: rgb(34,193,195);
+    background: linear-gradient(298deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -33,7 +34,8 @@ body {
 
 #Withdraw {
     height: 140px;
-    background-color: rgb(213, 216, 12);
+    background: rgb(34,193,195);
+    background: linear-gradient(298deg, rgb(79, 214, 216) 0%, rgb(45, 253, 125) 100%);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -43,7 +45,8 @@ body {
 
 #Blance {
     height: 140px;
-    background-color: rgb(161, 6, 45);
+    background: rgb(34,193,195);
+    background: linear-gradient(298deg, rgb(61, 195, 34) 0%, rgb(69, 253, 45) 100%);
     color: white;
     padding: 20px;
     border-radius: 10px;
