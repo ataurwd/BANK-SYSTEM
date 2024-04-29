@@ -7,9 +7,16 @@ loginbtn.addEventListener('click', function () {
     const trArea = document.getElementById('transactionArea');
     trArea.style.display = 'block'
 })
+//THIS FUNCTION FOR DEPOSIT AND CURRENT currentBalance FUNCTION
 
-//  deposit button addEventListener
-const depositBtn = document.getElementById('addDeposit');
+function updateSpanText(id, dpNumber) {
+    const current = document.getElementById(id).innerText;
+    const currentNumber = parseFloat(current);
+    const total = dpNumber + currentNumber;
+    document.getElementById(id).innerText = total;
+}
+
+//  deposit button ddDeposit');
 depositBtn.addEventListener('click',
     function () {
         const dpAmount = document.getElementById('dpAmount').value;
@@ -18,9 +25,9 @@ depositBtn.addEventListener('click',
         updateSpanText('currentDeposit', dpNumber)
         updateSpanText('currentBalance', dpNumber)
 
-        document.getElementById('dpAmount').value = '';
+        document.getElementById('dpAmount').value = ' ';
     })
-// this is for withdraw function addEventListener
+// withdraw
 
 const withdrawBtn = document.getElementById('addWithdraw');
 withdrawBtn.addEventListener('click', 
@@ -35,20 +42,5 @@ function getInputNumber (id){
     const Amount = document.getElementById(id).value;
     const Number = parseFloat(Amount);
     return Number;
-}
-
-
-
-
-
-
-
-//THIS FUNCTION FOR DEPOSIT AND CURRENT currentBalance FUNCTION
-
-function updateSpanText(id, dpNumber) {
-    const current = document.getElementById(id).innerText;
-    const currentNumber = parseFloat(current);
-    const total = dpNumber + currentNumber;
-    document.getElementById(id).innerText = total;
 }
 

@@ -69,3 +69,7 @@ body {
     padding: 20px;
     border-radius: 7px;
 }
+
+div{
+    border-radius: 24px;
+}
