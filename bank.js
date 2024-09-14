@@ -8,7 +8,6 @@ loginbtn.addEventListener('click', function () {
     trArea.style.display = 'block'
 })
 //THIS FUNCTION FOR DEPOSIT AND CURRENT currentBalance FUNCTION
-
 function updateSpanText(id, dpNumber) {
     const current = document.getElementById(id).innerText;
     const currentNumber = parseFloat(current);
@@ -17,18 +16,19 @@ function updateSpanText(id, dpNumber) {
 }
 
 //  deposit button ddDeposit');
-depositBtn.addEventListener('click',
+const addDeposit = document.getElementById('addDeposit');
+addDeposit.addEventListener('click',
     function () {
         const dpAmount = document.getElementById('dpAmount').value;
         const dpNumber = parseFloat(dpAmount);
-
         updateSpanText('currentDeposit', dpNumber)
         updateSpanText('currentBalance', dpNumber)
-
         document.getElementById('dpAmount').value = ' ';
     })
-// withdraw
 
+
+
+// withdraw
 const withdrawBtn = document.getElementById('addWithdraw');
 withdrawBtn.addEventListener('click', 
 function(){
@@ -37,7 +37,6 @@ function(){
     updateSpanText('currentBalance',  -1 *  withdrawNumber)
     document.getElementById('amountWithdraw').value = '';
 })
-
 function getInputNumber (id){
     const Amount = document.getElementById(id).value;
     const Number = parseFloat(Amount);
